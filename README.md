@@ -6,7 +6,7 @@ Deze repository bevat Ansible playbooks om een k3s-cluster op te zetten op drie 
 
 - `inventory.ini` – definieert de `controlplane` en `workers`
 - `install-k3s.yaml` – installeert k3s op alle nodes
-- `addons.yaml` – installeert Cert-Manager, Longhorn en NGINX Ingress via Helm
+- `addons.yaml` – installeert Cert-Manager, Longhorn en NGINX Ingress via Helm (Helm wordt automatisch geïnstalleerd)
 - `roles/k3s` – rol voor installatie van k3s
 - `roles/addons` – rol voor installatie van de helm-addons
 
