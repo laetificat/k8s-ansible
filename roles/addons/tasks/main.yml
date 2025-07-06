@@ -1,4 +1,10 @@
 ---
+- name: Install Helm
+  apt:
+    name: helm
+    state: present
+    update_cache: yes
+
 - name: Install cert-manager
   kubernetes.core.helm:
     name: cert-manager
