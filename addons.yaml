@@ -1,0 +1,6 @@
+---
+- name: Deploy Kubernetes addons
+  hosts: controlplane
+  become: yes
+  roles:
+    - addons
